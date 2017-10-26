@@ -1,0 +1,217 @@
+@font-face{
+	src: url("https://fonts.googleapis.com/css?family=Ubuntu");
+	font-family: 'Ubuntu', sans-serif;
+}
+body{
+	margin: auto;
+}
+.header{
+	z-index: 1;
+	background-color: #272727;
+	position: fixed;
+	height: 80px;
+	width: 100%;
+	box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    top: 0px;
+    left: 0px;    
+    display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.content{
+	margin-top: 80px;
+	margin-bottom: 0px;
+	padding-right: 20px;
+	padding-top: 60px;
+	min-height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.03);
+}
+.full-width-div {
+    width: 100%;
+    right: 0;
+}
+.footer{
+	position: relative;
+	height: 40px;
+	background-color: #272727;
+	font-family: 'Ubuntu', sans-serif;
+	color: #DADADA;
+	box-shadow: 0px -8px 10px rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.rectangle {
+	z-index: 2;
+	left: 40px;
+	top: 80px;
+    background-color: #272727;    
+    height: 58px;
+    width: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    justify-content: flex-start;
+}
+#anim{
+	font-family: 'Tangerine', serif;
+    font-size: 50px;
+    color: #00BCD4;
+    -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+    transition: font-size 1s;
+    
+}
+#anim a:visited,a:link,a:hover{
+	text-decoration: none;
+	color: #00BCD4;
+}
+#anim:hover{
+	font-size: 55px;
+}
+#imgstyle{
+	height: 58px;
+	margin-top : -38px;
+	margin-left: 15px;
+}
+.navigation{
+	z-index: 2;
+	width: 36%;
+	position: relative;
+	float: right;
+	top: 80px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+	justify-content: flex-end;
+}
+ul.navbar-animal {
+    list-style-type: none;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 0;
+    overflow: hidden;
+    background-color: #272727;
+}
+
+li {
+    float: left;
+}
+
+li a:not(#anim) {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active):not(#anim) {
+    background-color: #F7F7F7;
+    color: #272727;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.active {
+    background-color: #00BCD4;
+}
+.navbar-little{
+	z-index: 2;
+	font-size: 20px;
+	height: 1px;
+	position: relative;
+	margin-top:80px;
+	margin-left: 74%;
+}
+.title{
+	font-family: 'Ubuntu', sans-serif;
+	display: inline-block;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	letter-spacing: 0.5em;
+}
+.title:before{
+	content: "";
+	position: absolute;
+	width: 50%;
+	height: 2px;
+	bottom: 0;
+	left: 24%;
+	border-bottom: 2px solid #00BCD4;
+	box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+}
+div.polaroid {
+  width: 500px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+div.polaroid:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+div.container-img {
+  padding: 10px;
+  font-family: 'Ubuntu', sans-serif;
+  letter-spacing: 0.5em;
+}
+div.img-content {
+	height: 400px;
+	width: 400px;
+	margin: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+div.char {
+	position: static;
+	height: 400px;
+	width: 400px;
+	margin: 30px;
+	display: flex;
+	justify-content: center;
+}
+#pond {
+	display: flex;
+	justify-content: space-around;
+}
+ul.facts li {
+	float: none;
+	padding-top: 15px;
+	
+}
+
+div.lichar {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 15px;
+	letter-spacing: 0.1em;
+}
+li:nth-child(3n+0){
+	background: red;
+}
+@media only screen and (max-width: 750px) {
+    #pond {
+    	display: flex;
+        flex-direction: column;
+    }
+    .content{
+    	padding-top: 120px;
+    }
+    #imgstyle{
+		margin-top: 5px;
+    }
+    .rectangle{
+    	height: 70px;
+    	margin-left: 35px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .rectangle{
+    	height: 70px;
+    	margin-left: -10%;
+    }
+}
+@media only screen and (max-width: 350px) {
+   .content{
+    	padding-top: 240px;
+    }
+}
+}
